@@ -7,4 +7,4 @@
 
 
 ## Considerações:
-Projeto de aplicação SPA simples, com comsumo de API.
+Projeto de aplicação SPA simples em ReactJs, com comsumo de API.
