@@ -100,7 +100,7 @@ const Fps = () => {
 
       <div className="cards">
         {loading ? (<div>Carregando</div>) : games.map(game => (
-          <div className="card" key={String(game.id)}>
+          <div className="card2" key={String(game.id)}>
 
             <a onClick={() => showGameDetails(game.id)}>{game.name}</a>
 
