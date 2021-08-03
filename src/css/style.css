@@ -1,0 +1,204 @@
+/* Queries */
+  /* Screen larger than 600px? 2 column */
+  @media (min-width: 600px) {
+    .cards .nav{ grid-template-columns: repeat(2, 1fr); }
+  }
+  
+  /* Screen larger than 900px? 3 columns */
+  @media (min-width: 900px) {
+    .cards { grid-template-columns: repeat(3, 1fr); }
+  }  
+/* Layout */
+body{
+margin: 0;
+padding: 0;
+text-decoration: none;
+font-family: 'Poppins', sans-serif;
+background-color:rgb(230, 215, 215);
+}
+header{
+    height: 15rem;
+    background: rgb(255, 111, 94) ;
+    padding: 1rem;
+    border-radius: 0px 0px 90px 5px ;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    box-shadow: 5px 5px 10px lightgray;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+/* =============================== */
+.curved-div {
+  position: relative;
+  background: linear-gradient(270deg, rgb(255, 149, 91) 0%, rgb(255, 111, 94) 100%);
+  color: #FFF;
+  text-align: center;
+  align-items: center;
+  overflow: hidden;
+  top: 2rem;
+  bottom:3rem;
+  box-shadow: 1px 1px 5px  lightgray;
+  border-radius:90px 3px  3px 3px  ;
+}
+.curved-div svg {
+  display: block;
+  position: relative;
+  text-align: center;
+ 
+}
+
+.curved-div h1 {
+  font-size: 4rem;
+  font-family: "Poppins";
+  margin-top:0rem;
+
+}
+.curved-div p {
+  font-size: 1rem;
+  margin:0 5rem 2rem 5rem;
+  font-family: "Poppins";
+}
+/* ================================ */
+.links-nav{
+    display: flex;
+    font-size: 5rem;
+}
+
+a{  
+color: #fff;
+text-decoration: none;
+padding: 1rem 2rem;
+}
+/* Tags */
+.card {
+    background-color: dodgerblue;
+    color: white;
+    padding: 1rem;
+    height: 15rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 10px;
+    cursor: pointer;
+    
+  }
+  .card2 {
+    background-color: rgb(90, 145, 108);
+    color: white;
+    padding: 1rem;
+    height: 15rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  .cards {
+    font-family: 'Poppins', sans-serif;
+    width: auto;
+    margin:1rem ;
+    display: grid;
+    grid-gap: 1rem;
+    align-items: center;
+  }
+
+  /* Footer */
+
+  .sessaotext{
+    width: auto;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 2.5rem;
+    color: rgb(26, 26, 26);
+    position: relative;
+    text-align: center;
+    justify-content: space-between;
+  }
+
+  .paginacao{
+    width: auto;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    color: black;
+    position: relative;
+    text-align: center;
+    justify-content: space-between;
+  }
+ 
+  button{
+    color: rgb(253, 253, 253);
+    background-color:rgb(255, 111, 94);
+    cursor: pointer;
+    border-radius: 5px;
+    text-decoration: none;
+    border:rgb(255, 111, 94) ;
+    width: 7rem;
+    height: 1.5rem;
+    font-weight: 500;
+  }
+button:hover{
+    color: rgb(253, 253, 253);
+    background-color:rgb(73, 71, 71);
+    cursor: pointer;
+    border-radius: 5px;
+   }
+
+  footer {
+    font-family: 'Poppins', sans-serif;
+    position: fixed;
+    left: 0;
+    margin-top: 2rem;
+    bottom: 0;
+    width: 100%;
+    background: linear-gradient(2700deg, rgb(255, 149, 91) 0%, rgb(172, 94, 85) 100%);
+    color: white;
+    text-align: center;          /* Footer height */
+  }
+
+
+  /* ======================= */
+  /* MODAL */
+  .modal{
+    display: block;
+    top: 2rem;
+    right: 2rem;
+    bottom: 2rem;
+    left: 2rem;
+    font-family: "Poppins";
+    background: rgba(63, 61, 61, 0.994);
+    z-index: 99999;
+    -webkit-transition: opacity 40ms ease-in;
+    -moz-transition: opacity 40ms ease-in;
+    transition: opacity 40ms ease-in;
+    position:fixed;
+    margin:5% ;
+    padding: 15px 20px;
+    color: rgb(232, 232, 232);
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 8px;
+  }
+/* =============== */
+.btnmodal{
+  right: 1rem;
+  bottom: 1rem;
+}
+
+.btnnav{
+ width: 17rem;
+ height: 2.2rem;
+ margin-left: 2rem;
+ font-size: 2rem;
+ box-shadow: 3px 3px 6px rgb(228, 226, 225) ;
+}
