@@ -65,19 +65,21 @@ const Fps = () => {
   }, [page]);
 
   return (
+    // Iniciomodal com detalhes do jogo
     <div>
       {console.log('render')}
       {isModalOpen && (
-        <div id="modal">
-          {gameDetails.description}
-          rating: {gameDetails.rating}
-          playtime: {gameDetails.playtime}
+        <div className="modal">
+          <span>{gameDetails.description}</span>
+          <span>rating: {gameDetails.rating}</span>
+          <span>playtime: {gameDetails.playtime}</span>
 
-          <button onClick={() => setIsModalOpen(false)}>Fechar</button>
+          <button className="btnmodal" onClick={() => setIsModalOpen(false)}>Fechar</button>
         </div>
+        // Fim modal
       )}
-
       <div>
+ 
     <div class="curved-div">
       <h1>Bem Vindo , Jogos do Jão!</h1>
       <p>
@@ -98,7 +100,7 @@ const Fps = () => {
 
       <div className="cards">
         {loading ? (<div>Carregando</div>) : games.map(game => (
-          <div className="card2" key={String(game.id)}>
+          <div className="card" key={String(game.id)}>
 
             <a onClick={() => showGameDetails(game.id)}>{game.name}</a>
 
